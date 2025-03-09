@@ -1,0 +1,324 @@
+.icon{
+     height: 40px;
+     width: 40px;
+}
+ .footer {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    .footer .footer-logo img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    
+
+    .footer .social-icons a {
+      color: #fff;
+      margin-right: 15px;
+      font-size: 20px;
+    }
+
+.banner {
+      position: relative;
+      /*background-image: url('../../attachment/banner/banner.png');  Replace with your image path */
+
+      background-size: cover;
+      background-position: center;
+      height: 100%; /* Adjust height as needed */
+      width: 100%; /* Adjust height as needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+ 
+
+@media (max-width: 576px) {
+  .banner {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+hr{
+  border: 2px solid black;
+}
+
+.card-body {
+  padding: 0px !important;
+}
+.breadcrumb {
+  font-size: 1.5rem; /* Base font size for larger screens */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  background-color: white;
+  color: black;
+}
+
+.breadcrumb-item a{
+  margin-right: 10px;
+  color: black;
+  text-decoration: none ;
+}
+
+.breadcrumb-item.active {
+  
+  color: black;
+  font-weight: bold;
+}
+
+.breadcrumb-img {
+  width: 30px; /* Default image size */
+  height: 30px;
+  object-fit: contain;
+  margin-left: auto; /* Pushes image to the right */
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 1.2rem; /* Slightly smaller font on tablets and small screens */
+  }
+
+  .breadcrumb-img {
+    width: 25px; /* Smaller image size on smaller screens */
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 1rem; /* Further reduce font size for mobile devices */
+  }
+
+  .breadcrumb-img {
+    width: 20px; /* Reduce image size on very small screens */
+    height: 20px;
+  }
+}
+.form-control:focus {
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+
+/*form transition*/
+
+
+
+.inputbox{
+     /* position: absolute !important;*/
+      outline: none !important;
+      font-size: 1.2em !important;
+      padding: 0 20px !important;
+      line-height: 30px !important;
+      border: 0px !important;
+      border-bottom:2px solid grey !important ;
+ 
+      background: transparent !important;
+      transition: 0.1s ease !important;
+      z-index: 1111 !important;
+
+    }
+    .labelline{
+      position: absolute !important;
+      top: -2px;
+      left: 15px;
+      font-size: 1.2em !important;
+      padding: 0 0 !important;
+      margin-left:  10px !important;
+      transition: 0.2s ease !important;
+      
+      background-color:white !important;
+    }
+    .input-container {
+  position: relative;
+}
+    .inputbox:focus+ .labelline,
+    .inputbox:valid+ .labelline{
+      padding: 0 0px !important;
+      margin-left: 30px !important;
+      height: 20px !important;
+      line-height: 30px !important;
+      transform: translate(-15px,-16px)scale(0.88) !important;
+      z-index: 1111 !important;
+    }
+
+
+ .__card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.__card-body {
+    flex: 1 1 auto;
+}
+
+.__card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.__see-more {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.__see-more-content {
+    display: none;
+}
+.__description {
+    display: none; /* Hide description by default */
+  }
+
+  
+
+  /*banner   section*/
+.hero_area {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bg-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ .hero_area {
+  min-height: auto;
+}
+
+.hero_area .bg-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ .hero_area .bg-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right top;
+     object-position: right top;
+}
+  
+.img-back {
+  background-image: url('../../attachment/banner/bg.jpg');
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  width: 100%;
+ 
+}
+
+.glider-contain {
+      width: 100%;
+      margin: 50px auto;
+      overflow: hidden;
+      perspective: 1000px;
+    }
+
+    .glider {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .glider-slide {
+      width: 500px !important;  
+      height: 400px !important;
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white !important;
+      color: white;
+      font-size: 24px;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+      transform-style: preserve-3d;
+    }
+
+
+.about_section {
+  background: #222831;
+  color: #ffffff;
+}
+
+.about_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_section .img-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about_section .img-box img {
+  width: 100%;
+  max-width: 445px;
+  position: relative;
+  z-index: 2;
+}
+
+.about_section .detail-box p {
+  margin-top: 15px;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.about_section .detail-box a:hover {
+  background-color: #e69c00;
+}
+.he{
+  font-size: 50px;
+}
